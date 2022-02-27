@@ -19,3 +19,9 @@ variable "gce_ext_disk_size" {
   nullable = false
   default = ""
 }
+
+variable "gce_wp_machine_type" {
+  type     = string
+  nullable = false
+  default = ""
+}
