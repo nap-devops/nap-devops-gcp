@@ -1,3 +1,4 @@
+/*
 resource "google_compute_global_address" "gce_wp" {
   project      = var.project
   name         = "gce-wp-1"
@@ -15,3 +16,4 @@ resource "google_dns_record_set" "gce_wp_dns_1" {
 
   rrdatas = [google_compute_global_address.gce_wp.address]
 }
+*/
