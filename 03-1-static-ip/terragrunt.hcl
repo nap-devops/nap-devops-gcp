@@ -1,5 +1,5 @@
-dependency "03-dns" {
-  config_path = "../03-dns"
+dependency "02-0-dns" {
+  config_path = "../02-0-dns"
   skip_outputs = true
 }
 
