@@ -2,7 +2,7 @@
 module "wp-gce-ase1-a" {
   source          = "../modules/gce"
 
-  vm_name         = "wp-${local.ase1_region}-a"
+  vm_name         = "nap-devops-wp-ase1-a"
   vm_sequence     = "00"
   vm_tags         = "wordpress"
   vm_service_account = var.gce_wp_service_account
