@@ -7,6 +7,7 @@ locals {
 
 inputs = {
   project = local.project
+  vpc_name = ""
   name_prefix = "nap-devops"
   top_level_domain = "devops-dev.napbiotec.io"
 
