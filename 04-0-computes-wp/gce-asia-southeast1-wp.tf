@@ -4,7 +4,7 @@ module "wp-gce-ase1-a" {
 
   vm_name         = "nap-devops-wp-ase1-a"
   vm_sequence     = "00"
-  vm_tags         = "wordpress"
+  vm_tags         = ["wordpress"]
   vm_service_account = var.gce_wp_service_account
   boot_disk_image  = var.gce_wp_boot_disk
   vm_machine_type  = var.gce_wp_machine_type
