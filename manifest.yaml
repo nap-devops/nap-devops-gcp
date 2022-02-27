@@ -1,0 +1,18 @@
+config:
+  defaultChartId: helm-terraform-gcp
+
+vars: {}
+
+charts:
+  helm-terraform-gcp:
+    chartUrl: https://its-software-services-devops.github.io/helm-terraform-gcp/
+    version: 1.1.11
+
+copy:
+  - from: vars-${ENV.ENVIRONMENT}.tfvars
+    toFile: "terraform.tfvars"
+
+  - from: terragrunt-${ENV.ENVIRONMENT}.hcl
+    toFile: "terragrunt.hcl"
+
+infraIasc: []
