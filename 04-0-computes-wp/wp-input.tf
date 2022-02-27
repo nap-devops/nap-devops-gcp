@@ -25,3 +25,9 @@ variable "gce_wp_machine_type" {
   nullable = false
   default = ""
 }
+
+variable "gce_wp_subnet" {
+  type     = string
+  nullable = false
+  default = ""
+}
