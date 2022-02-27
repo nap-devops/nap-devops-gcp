@@ -7,11 +7,14 @@ locals {
 
 inputs = {
   project = local.project
-  vpc_name = ""
+  vpc_name = "projects/nap-infra/global/networks/nap-vpc-nonprod"
   name_prefix = "nap-devops"
   top_level_domain = "devops-dev.napbiotec.io"
-
+  gce_wp_machine_type = "e2-small"
+  gce_wp_subnet = "projects/nap-infra/regions/asia-southeast1/subnetworks/devops-nonprod-web"
+  gce_ext_disk_size = "100"
   gce_wp_service_account = "gce-wp@${local.project}.iam.gserviceaccount.com"
+  gce_wp_boot_disk = "projects/ubuntu-os-cloud/global/images/ubuntu-2004-focal-v20220204"
 }
 
 

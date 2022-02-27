@@ -1,7 +1,3 @@
-dependency "01-0-vpc" {
-  config_path = "../01-0-vpc"
-  skip_outputs = true
-}
 
 dependency "00-1-scripts" {
   config_path = "../00-1-scripts"
