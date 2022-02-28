@@ -177,6 +177,6 @@ resource "google_compute_managed_ssl_certificate" "certificate" {
   name = "${var.prefix}-${var.name}-cert"
 
   managed {
-    domains = var.custom_domain_names
+    domains = concat(var.custom_domain_names, var.additional_domain_names)
   }
 }
