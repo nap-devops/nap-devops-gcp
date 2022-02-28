@@ -51,3 +51,9 @@ variable "custom_labels" {
 
   default = {}
 }
+
+variable "additional_domain_names" {
+  description = "List of custom domain names."
+  type        = list(string)
+  default     = []
+}

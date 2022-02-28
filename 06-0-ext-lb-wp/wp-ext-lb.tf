@@ -8,7 +8,7 @@ module "wp-lb" {
   project               = var.project
 
   dns_managed_zone_name = "devops"
-  custom_domain_names   = [ "wp.${var.top_level_domain}" ]
+  custom_domain_names   = concat([ "wp.${var.top_level_domain}" ], var.additional_domain_names)
   create_dns_entries    = true
   dns_record_ttl        = var.wp_dns_record_ttl
   enable_http           = false
