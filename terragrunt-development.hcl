@@ -10,6 +10,7 @@ inputs = {
   vpc_name = "projects/nap-infra/global/networks/nap-vpc-nonprod"
   name_prefix = "nap-devops"
   top_level_domain = "devops-dev.napbiotec.io"
+  additional_domain_names = []
   gce_wp_machine_type = "e2-small"
   gce_wp_subnet = "projects/nap-infra/regions/asia-southeast1/subnetworks/devops-nonprod-web"
   gce_ext_disk_size = "100"
