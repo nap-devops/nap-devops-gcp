@@ -159,10 +159,14 @@ resource "google_compute_backend_service" "bn" {
 resource "google_compute_health_check" "default" {
   project = var.project
   name    = "${var.name}-hc"
-
+/*
   http_health_check {
     port         = 80
     request_path = "/"
+  }
+*/
+  tcp_health_check {
+    port = "80"
   }
 
   check_interval_sec = 5
