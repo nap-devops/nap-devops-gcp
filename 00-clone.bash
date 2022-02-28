@@ -16,7 +16,7 @@ if [ "${ENVIRONMENT_ALIAS}" == "dev" ]; then
     BRANCH=development
     ENVIRONMENT=development
 elif [ "${ENVIRONMENT_ALIAS}" == "prod" ]; then
-    BRANCH=main
+    BRANCH=production
     ENVIRONMENT=production
 fi
 
