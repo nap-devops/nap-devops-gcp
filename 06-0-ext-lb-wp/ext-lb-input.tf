@@ -57,3 +57,15 @@ variable "additional_domain_names" {
   type        = list(string)
   default     = []
 }
+
+variable "top_level_domain2" {
+  description = "Custom domain name."
+  type        = string
+  default     = ""
+}
+
+variable "additional_domain_names2" {
+  description = "List of custom domain names."
+  type        = list(string)
+  default     = []
+}

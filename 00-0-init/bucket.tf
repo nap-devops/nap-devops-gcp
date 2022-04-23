@@ -32,3 +32,16 @@ resource "google_storage_bucket" "bucket-wp" {
     enabled = true
   }
 }
+
+resource "google_storage_bucket" "bucket-wp-aldamex" {
+  name          = lower("${var.project}-wp-aldamex")
+  location      = "ASIA"
+  force_destroy = true
+  
+  uniform_bucket_level_access = true
+  storage_class = "STANDARD"
+  
+  versioning {
+    enabled = true
+  }
+}
