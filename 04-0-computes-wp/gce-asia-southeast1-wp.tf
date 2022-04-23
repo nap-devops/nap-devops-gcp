@@ -16,7 +16,7 @@ module "wp-gce-ase1-a" {
   startup_script_path = "../00-1-scripts/rendered-wp.bash"
 }
 
-module "wp-gce-ase1-a" {
+module "wp-gce-adm-ase1-a" {
   source          = "../modules/gce"
 
   vm_name         = "wp-asia-southeast1-a" #Name is significant to instance group
