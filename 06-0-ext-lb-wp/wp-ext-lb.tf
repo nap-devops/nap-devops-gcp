@@ -33,7 +33,7 @@ module "admx-wp-lb" {
   enable_http           = false
   enable_ssl            = true
   instances_regions     = ["asia-southeast1"]
-  prefix                = local.prefix
+  prefix                = "admx"
 
   custom_labels = var.custom_labels
 }
