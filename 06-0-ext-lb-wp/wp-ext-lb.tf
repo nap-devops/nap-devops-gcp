@@ -25,7 +25,7 @@ module "admx-wp-lb" {
   name                  = "admx-${var.name}"
   project               = var.project
 
-  dns_managed_zone_name = "devops"
+  dns_managed_zone_name = "admx"
   custom_domain_names   = [ "wp.${var.top_level_domain2}" ]
   additional_domain_names = var.additional_domain_names2
   create_dns_entries    = true
