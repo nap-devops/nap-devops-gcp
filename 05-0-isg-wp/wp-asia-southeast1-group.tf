@@ -15,7 +15,7 @@ module "group-wp-adm-ase1" {
 
   project = var.project
   region = "asia-southeast1"
-  type = "adm"
+  type = "admx"
   zone_a_instances = ["00"]
   zone_b_instances = []
   zone_c_instances = []
