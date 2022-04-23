@@ -16,11 +16,11 @@ module "wp-gce-ase1-a" {
   startup_script_path = "../00-1-scripts/rendered-wp.bash"
 }
 
-module "wp-gce-adm-ase1-a" {
+module "adm-gce-adm-ase1-a" {
   source          = "../modules/gce"
 
-  vm_name         = "wp-asia-southeast1-a" #Name is significant to instance group
-  vm_sequence     = "aldamex"
+  vm_name         = "adm-asia-southeast1-a" #Name is significant to instance group
+  vm_sequence     = "00"
   vm_tags         = ["wordpress"]
   vm_service_account = var.gce_wp_service_account
   boot_disk_image  = var.gce_wp_boot_disk
