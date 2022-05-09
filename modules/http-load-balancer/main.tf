@@ -98,7 +98,7 @@ resource "google_compute_url_map" "urlmap" {
 
   default_service = google_compute_backend_service.bn.self_link
 
-  default_url_redirect {
+  url_redirect {
     strip_query            = false
     https_redirect         = true  // this is the magic
   }
