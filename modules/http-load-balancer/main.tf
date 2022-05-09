@@ -109,6 +109,7 @@ resource "google_compute_url_map" "urlmap" {
 
     default_url_redirect {
       https_redirect = true
+      strip_query = true
     }
 
   #  path_rule {
