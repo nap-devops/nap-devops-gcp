@@ -103,15 +103,19 @@ resource "google_compute_url_map" "urlmap" {
   #  path_matcher = "all"
   #}
 
-  #path_matcher {
-  #  name            = "all"
-  #  default_service = google_compute_backend_service.api.self_link
+  path_matcher {
+    name            = "all"
+    default_service = google_compute_backend_service.bn.self_link
+
+    default_url_redirect {
+      https_redirect = true
+    }
 
   #  path_rule {
   #    paths   = ["/*"]
   #    service = google_compute_backend_service.api.self_link
   #  }
-  #}
+  }
 }
 
 # ------------------------------------------------------------------------------
