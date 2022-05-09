@@ -98,11 +98,6 @@ resource "google_compute_url_map" "urlmap" {
 
   default_service = google_compute_backend_service.bn.self_link
 
-  url_redirect {
-    strip_query            = false
-    https_redirect         = true  // this is the magic
-  }
-
   #host_rule {
   #  hosts        = ["*"]
   #  path_matcher = "all"
