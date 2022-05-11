@@ -31,7 +31,7 @@ module "admx-wp-lb" {
   additional_domain_names = var.additional_domain_names2
   create_dns_entries    = true
   dns_record_ttl        = var.wp_dns_record_ttl
-  enable_http           = false
+  enable_http           = true
   enable_ssl            = true
   instances_regions     = ["asia-southeast1"]
   prefix                = "admx"
